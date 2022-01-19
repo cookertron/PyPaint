@@ -40,7 +40,7 @@ class brush:
         pygame.draw.circle(PDS, color, BRUSH.pos, BRUSH.radius)
 
 class palette:
-    def __init__(s, width, background_color=(255, 255, 255)):
+    def __init__(s, width, background_color=(64, 64, 64)):
         global PDR
 
         s.rect = Rect(0, 0, width, PDR.h)
@@ -84,7 +84,7 @@ class browser:
             s.filename = filename
             s.surface = surface
 
-    def __init__(s, width, background_color=(255, 255, 255)):
+    def __init__(s, width, background_color=(64, 64, 64)):
         global PDR
 
         # create surfaces
